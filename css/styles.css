@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  /* =========================================
+     Tipografia (Fontes)
+     ========================================= */
+  --font-heading: "Sora", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* =========================================
+     Paleta de Cores
+     ========================================= */
+
+  /* Fundos */
+  --bg-primary: #131313; /* Fundo principal do site */
+  --bg-card: #262626; /* Fundo secundário */
+
+  /* Textos */
+  --text-base: #d1d5db; /* Cor padrão para parágrafos e descrições */
+
+  /* Destaques / Ações */
+  --brand-primary: #d2f000; /* Títulos principais, botões, ícones e hover */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-heading);
+  background-color: var(--bg-primary);
+  color: var(--text-base);
+}
