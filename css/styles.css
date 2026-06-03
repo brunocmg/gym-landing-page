@@ -19,6 +19,7 @@
 
   /* Textos */
   --text-base: #d1d5db; /* Cor padrão para parágrafos e descrições */
+  --text-secondary: #131313;
 
   /* Destaques / Ações */
   --brand-primary: #d2f000; /* Títulos principais, botões, ícones e hover */
@@ -34,4 +35,134 @@ body {
   font-family: var(--font-heading);
   background-color: var(--bg-primary);
   color: var(--text-base);
+}
+
+nav.menu-home-navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+nav.menu-home-navegacao > h2 {
+  color: var(--brand-primary);
+  font-size: 1.65rem;
+}
+
+nav.menu-home-navegacao > ul {
+  display: flex;
+  gap: 1.3rem;
+  list-style: none;
+}
+
+nav.menu-home-navegacao > ul > li > a {
+  color: var(--text-base);
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav.menu-home-navegacao > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--brand-primary);
+  transition: width 0.3s ease-in-out;
+}
+
+nav.menu-home-navegacao > ul > li > a:hover {
+  color: var(--brand-primary);
+}
+
+nav.menu-home-navegacao > ul > li > a:hover::after {
+  width: 100%;
+}
+
+nav.menu-home-navegacao > a {
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--brand-primary);
+  transition: all 0.25s ease-out;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.88rem;
+}
+
+nav.menu-home-navegacao > a:hover {
+  box-shadow: 0px 0px 20px var(--brand-primary);
+}
+
+section.propaganda-inicial {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../assets/imgs/bg-section-inicial-home.png") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1.5rem;
+
+  height: 870px;
+}
+
+section.propaganda-inicial > h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 7.5rem;
+}
+
+section.propaganda-inicial > h1 > span {
+  color: var(--brand-primary);
+}
+
+section.propaganda-inicial > p {
+  text-align: center;
+}
+
+section.propaganda-inicial > div.btns-propaganda-inicial {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+
+section.propaganda-inicial > div.btns-propaganda-inicial > a#btn-comece-agora {
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--brand-primary);
+  transition: all 0.25s ease-out;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.88rem;
+}
+
+section.propaganda-inicial
+  > div.btns-propaganda-inicial
+  > a#btn-comece-agora:hover {
+  box-shadow: 0px 0px 20px var(--brand-primary);
+}
+
+section.propaganda-inicial
+  > div.btns-propaganda-inicial
+  > a#btn-conheca-planos {
+  color: var(--text-base);
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--bg-primary);
+  transition: all 0.25s ease-out;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.88rem;
+  border: 1.5px solid var(--text-base);
+}
+
+section.propaganda-inicial
+  > div.btns-propaganda-inicial
+  > a#btn-conheca-planos:hover {
+  box-shadow: 0px 0px 20px var(--text-base);
 }
