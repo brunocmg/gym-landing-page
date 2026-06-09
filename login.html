@@ -23,15 +23,21 @@
         <div class="login-formulario-wrapper">
           <h1>Login do Aluno</h1>
 
-          <form class="form-login" action="#">
+          <form class="form-login" id="form-login" action="#">
             <div class="input-group">
               <label for="cpf"><i class="ph ph-user"></i> CPF</label>
-              <input type="text" id="cpf" placeholder="" required />
+              <input
+                type="text"
+                id="cpf"
+                placeholder="000.000.000-00"
+                maxlength="14"
+                required
+              />
             </div>
 
             <div class="input-group">
               <label for="senha"><i class="ph ph-lock"></i> Senha</label>
-              <input type="password" id="senha" placeholder="" required />
+              <input type="password" id="senha" placeholder="*****" required />
             </div>
 
             <div class="form-actions">
@@ -57,5 +63,14 @@
         </div>
       </div>
     </footer>
+
+    <div id="toast-sucesso" class="toast-oculto">
+      <i class="ph-fill ph-check-circle"></i>
+      <span>Login bem-sucedido!</span>
+    </div>
+
+    <audio id="som-sucesso" src="./assets/songs/notification-sound.mp3"></audio>
+
+    <script src="./js/login.js"></script>
   </body>
 </html>
