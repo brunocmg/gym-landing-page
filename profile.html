@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/responsive-profile.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Power Fit - Perfil</title>
+  </head>
+  <body>
+    <nav class="menu-home-navegacao">
+      <h2>Power Fit</h2>
+      <ul>
+        <li><a class="ativo" href="index.html">HOME</a></li>
+        <li><a href="index.html#modalidades">MODALIDADES</a></li>
+        <li><a href="index.html#horarios">HORÁRIOS</a></li>
+        <li><a href="index.html#unidades">UNIDADES</a></li>
+        <li><a href="index.html#planos">PLANOS</a></li>
+      </ul>
+    </nav>
+
+    <main class="sessao-perfil">
+      <section class="perfil-container">
+        <div class="perfil-coluna-esquerda">
+          <h1>Perfil</h1>
+
+          <div class="perfil-item">
+            <div class="perfil-texto">
+              <span class="perfil-label">Nome:</span>
+              <strong class="perfil-valor" id="nome-usuario"
+                >João Silva dos Santos</strong
+              >
+            </div>
+            <button
+              class="btn-editar"
+              type="button"
+              data-campo="nome"
+              aria-label="Editar nome"
+            >
+              <i class="ph ph-pencil-simple"></i>
+            </button>
+          </div>
+
+          <div class="perfil-item">
+            <div class="perfil-texto">
+              <span class="perfil-label">Email:</span>
+              <strong class="perfil-valor" id="email-usuario"
+                >joao.silva@email.com</strong
+              >
+            </div>
+            <button
+              class="btn-editar"
+              type="button"
+              data-campo="email"
+              aria-label="Editar email"
+            >
+              <i class="ph ph-pencil-simple"></i>
+            </button>
+          </div>
+
+          <div class="perfil-item">
+            <div class="perfil-texto">
+              <span class="perfil-label">Telefone:</span>
+              <strong class="perfil-valor" id="telefone-usuario"
+                >99999-8888</strong
+              >
+            </div>
+            <button
+              class="btn-editar"
+              type="button"
+              data-campo="telefone"
+              aria-label="Editar telefone"
+            >
+              <i class="ph ph-pencil-simple"></i>
+            </button>
+          </div>
+
+          <div class="perfil-item">
+            <div class="perfil-texto">
+              <span class="perfil-label">CPF:</span>
+              <strong class="perfil-valor" id="cpf-usuario"
+                >111.222.333-99</strong
+              >
+            </div>
+            <button
+              class="btn-editar"
+              type="button"
+              data-campo="cpf"
+              aria-label="Editar CPF"
+            >
+              <i class="ph ph-pencil-simple"></i>
+            </button>
+          </div>
+
+          <div class="perfil-item perfil-item-senha">
+            <div class="perfil-texto">
+              <span class="perfil-label">Senha:</span>
+              <strong
+                class="perfil-valor perfil-valor-secundario"
+                id="senha-usuario"
+                >Alterar Senha</strong
+              >
+            </div>
+            <button
+              class="btn-editar"
+              type="button"
+              data-campo="senha"
+              aria-label="Alterar senha"
+            >
+              <i class="ph ph-pencil-simple"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="perfil-coluna-direita">
+          <div class="avatar-area">
+            <button
+              class="btn-editar-avatar"
+              type="button"
+              aria-label="Editar foto de perfil"
+            >
+              <i class="ph ph-pencil-simple"></i>
+            </button>
+
+            <div class="avatar-perfil">
+              <img
+                src="./assets/imgs/profile.jpg"
+                alt="Foto de perfil do aluno"
+                class="avatar-foto"
+              />
+            </div>
+          </div>
+
+          <div class="card-plano">
+            <span>Plano ativo:</span>
+            <strong>Intermediário</strong>
+          </div>
+
+          <a class="btn-agendar" href="#">Agendar aula</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="brand">Power Fit</div>
+        <nav class="footer-links">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Trabalhe Conosco</a>
+          <a href="#">Contato</a>
+        </nav>
+        <div class="copyright">
+          © 2026 Power Fit - Elite Training. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="toast-perfil"
+      class="toast-oculto"
+      aria-live="polite"
+      aria-atomic="true"
+    >
+      <i class="ph-fill ph-check-circle"></i>
+      <span>Atualização iniciada.</span>
+    </div>
+
+    <script src="./js/profile.js"></script>
+  </body>
+</html>
