@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@media (max-width: 1100px) {
+  .register-formulario-wrapper {
+    padding: 3rem 2rem 3rem 2.5rem;
+  }
+
+  .register-formulario-wrapper h1 {
+    font-size: 2.8rem;
+  }
+
+  .register-imagem {
+    min-height: 620px;
+  }
+}
+
+@media (max-width: 900px) {
+  nav.menu-home-navegacao {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav.menu-home-navegacao > ul {
+    gap: 1rem 1.2rem;
+  }
+
+  .sessao-register {
+    padding-bottom: 1.5rem;
+  }
+
+  .register-container {
+    flex-direction: column;
+  }
+
+  .register-formulario-wrapper {
+    padding: 2.5rem 1.5rem 2rem;
+  }
+
+  .register-formulario-wrapper h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .register-imagem {
+    order: -1;
+    min-height: 34vh;
+    background-position: center top;
+  }
+
+  .form-actions {
+    justify-content: center;
+  }
+
+  .btn-registrar,
+  .btn-entrar {
+    width: 100%;
+  }
+
+  .separador {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .site-footer .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 540px) {
+  nav.menu-home-navegacao > h2 {
+    font-size: 1.4rem;
+  }
+
+  nav.menu-home-navegacao > ul {
+    gap: 0.8rem 1rem;
+  }
+
+  nav.menu-home-navegacao > ul > li > a {
+    font-size: 0.82rem;
+  }
+
+  .register-formulario-wrapper {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .register-formulario-wrapper h1 {
+    font-size: 2.1rem;
+  }
+
+  .form-register label {
+    font-size: 0.98rem;
+  }
+
+  .form-register input {
+    padding: 0.85rem 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .register-imagem {
+    min-height: 28vh;
+  }
+
+  .toast-oculto {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    justify-content: center;
+  }
+}

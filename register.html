@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/register.css" />
+    <link rel="stylesheet" href="./css/responsive-register.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Power Fit - Cadastro do Aluno</title>
+  </head>
+  <body>
+    <nav class="menu-home-navegacao">
+      <h2>Power Fit</h2>
+      <ul>
+        <li><a class="ativo" href="index.html">HOME</a></li>
+        <li><a href="#">MODALIDADES</a></li>
+        <li><a href="#">HORÁRIOS</a></li>
+        <li><a href="#">UNIDADES</a></li>
+        <li><a href="#">PLANOS</a></li>
+      </ul>
+    </nav>
+
+    <main class="sessao-register">
+      <div class="register-container">
+        <div class="register-formulario-wrapper">
+          <h1>Cadastre-se</h1>
+
+          <form class="form-register" id="form-register" action="#">
+            <div class="input-group">
+              <label for="nome"><i class="ph ph-user"></i> Nome</label>
+              <input
+                type="text"
+                id="nome"
+                placeholder="Seu nome completo"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="telefone"><i class="ph ph-phone"></i> Telefone</label>
+              <input
+                type="text"
+                id="telefone"
+                placeholder="(00) 00000-0000"
+                maxlength="15"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="cpf"
+                ><i class="ph ph-identification-card"></i> CPF</label
+              >
+              <input
+                type="text"
+                id="cpf"
+                placeholder="000.000.000-00"
+                maxlength="14"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="email"
+                ><i class="ph ph-envelope-simple"></i> Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                placeholder="voce@exemplo.com"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="senha"><i class="ph ph-lock"></i> Senha</label>
+              <input
+                type="password"
+                id="senha"
+                placeholder="Crie uma senha segura"
+                minlength="6"
+                required
+              />
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-registrar">Registre-se</button>
+              <span class="separador">ou</span>
+              <a href="login.html" class="btn-entrar">Entrar</a>
+            </div>
+          </form>
+        </div>
+
+        <div class="register-imagem" aria-hidden="true"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="brand">Power Fit</div>
+        <nav class="footer-links">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Trabalhe Conosco</a>
+          <a href="#">Contato</a>
+        </nav>
+        <div class="copyright">
+          © 2026 Power Fit - Elite Training. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="toast-sucesso"
+      class="toast-oculto"
+      aria-live="polite"
+      aria-atomic="true"
+    >
+      <i class="ph-fill ph-check-circle"></i>
+      <span>Cadastro realizado com sucesso!</span>
+    </div>
+
+    <audio id="som-sucesso" src="./assets/songs/notification-sound.mp3"></audio>
+
+    <script src="./js/register.js"></script>
+  </body>
+</html>
