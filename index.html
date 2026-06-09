@@ -35,9 +35,204 @@
       </p>
 
       <div class="btns-propaganda-inicial">
-        <a href="#" id="btn-comece-agora">COMECE AGORA</a>
-        <a href="#" id="btn-conheca-planos">CONHEÇA OS PLANOS</a>
+        <a href="./singup.html" id="btn-comece-agora">COMECE AGORA</a>
+        <a href="#planos" id="btn-conheca-planos">CONHEÇA OS PLANOS</a>
       </div>
     </section>
+
+    <section class="carrossel">
+      <div class="carrossel-viewport">
+        <div
+          class="carrossel-faixa"
+          tabindex="0"
+          aria-label="Carrossel de imagens"
+        >
+          <div
+            class="carrossel-slide"
+            style="background-image: url(&quot;./assets/imgs/imagem1.jpg&quot;)"
+          ></div>
+          <div
+            class="carrossel-slide"
+            style="background-image: url(&quot;./assets/imgs/imagem2.jpg&quot;)"
+          ></div>
+          <div
+            class="carrossel-slide"
+            style="background-image: url(&quot;./assets/imgs/imagem3.jpg&quot;)"
+          ></div>
+          <div
+            class="carrossel-slide"
+            style="background-image: url(&quot;./assets/imgs/imagem4.jpg&quot;)"
+          ></div>
+          <div
+            class="carrossel-slide"
+            style="background-image: url(&quot;./assets/imgs/imagem5.jpg&quot;)"
+          ></div>
+          <div
+            class="carrossel-slide"
+            style="background-image: url(&quot;./assets/imgs/imagem6.jpg&quot;)"
+          ></div>
+        </div>
+      </div>
+
+      <button
+        class="carrossel-arrow esquerda"
+        aria-label="Voltar"
+        type="button"
+      >
+        ◀
+      </button>
+      <button
+        class="carrossel-arrow direita"
+        aria-label="Avançar"
+        type="button"
+      >
+        ▶
+      </button>
+    </section>
+    <script src="./js/carrossel.js"></script>
+
+
+    <section class="modalidades" id="modalidades">
+      <h2>Modalidades de Treino</h2>
+      <div class="modalidades-grid">
+        <article class="modalidade-card">
+          <div
+            class="thumb"
+            style="
+              background-image: url(&quot;./assets/imgs/academia.jpg&quot;);
+            "
+          ></div>
+          <div class="modalidade-info">
+            <h3>Musculação</h3>
+            <p>
+              Equipamentos de ponta e acompanhamento profissional para focar em
+              hipertrofia, força e resistência.
+            </p>
+          </div>
+        </article>
+
+        <article class="modalidade-card">
+          <div
+            class="thumb"
+            style="
+              background-image: url(&quot;./assets/imgs/fit-dance.jpg&quot;);
+            "
+          ></div>
+          <div class="modalidade-info">
+            <h3>Fit Dance</h3>
+            <p>
+              Queime calorias enquanto se diverte: aulas dinâmicas e
+              coreografadas para movimentar o corpo.
+            </p>
+          </div>
+        </article>
+
+        <article class="modalidade-card">
+          <div
+            class="thumb"
+            style="background-image: url(&quot;./assets/imgs/boxe.jpg&quot;)"
+          ></div>
+          <div class="modalidade-info">
+            <h3>Boxe</h3>
+            <p>
+              Desenvolva força, agilidade e reflexos com técnicas reais de
+              combate e condicionamento.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="horarios" id="horarios">
+      <h2>Horário de aulas</h2>
+      <div class="horarios-grid">
+        <div class="horario-card">
+          <h4>Musculação</h4>
+          <ul>
+            <li>Seg - Sex: 06:00 - 23:00</li>
+            <li>Sábado: 06:00 - 17:00</li>
+            <li>Domingo: 08:00 - 12:00</li>
+          </ul>
+        </div>
+
+        <div class="horario-card">
+          <h4>Fit Dance</h4>
+          <ul>
+            <li>Segunda (iniciante): 17:00</li>
+            <li>Quarta (avançado): 19:00</li>
+            <li>Sábado (aulão): 10:00</li>
+          </ul>
+        </div>
+
+        <div class="horario-card">
+          <h4>Boxe</h4>
+          <ul>
+            <li>Segunda (avançado): 19:00</li>
+            <li>Quarta (iniciante): 17:00</li>
+            <li>Sábado (aulão): 14:00</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="unidades" id="unidades">
+      <h2>Unidades</h2>
+      <div class="unidades-card">
+        <div
+          class="unidades-hero"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1558611848-73f7eb4001d2?auto=format&fit=crop&w=1200&q=80&quot;);
+          "
+        >
+          <div class="unidades-cta">
+            <h3>Encontre a academia mais próxima!</h3>
+            <input type="search" placeholder="Escolher academia" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="planos" id="planos">
+      <h2>Planos</h2>
+      <div class="planos-grid">
+        <article class="plano-card">
+          <h3>Básico</h3>
+          <p>Acesso à academia que escolher no horário da sua escolha.</p>
+          <strong>R$59,99</strong>
+          <a class="btn-plano" href="#">Contatar agora</a>
+        </article>
+
+        <article class="plano-card">
+          <h3>Intermediário</h3>
+          <p>Acesso + direito a 1 aula por semana.</p>
+          <strong>R$89,99</strong>
+          <a class="btn-plano" href="#">Contatar agora</a>
+        </article>
+
+        <article class="plano-card">
+          <h3>Avançado</h3>
+          <p>Acesso + direito a 2 aulas por semana.</p>
+          <strong>R$119,99</strong>
+          <a class="btn-plano" href="#">Contatar agora</a>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="brand">Power Fit</div>
+        <nav class="footer-links">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Contato</a>
+        </nav>
+        <div class="copyright">
+          © 2026 Power Fit - Elite Training. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
