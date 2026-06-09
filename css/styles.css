@@ -6,21 +6,24 @@
   --font-heading: "Sora", sans-serif;
   --font-body: "Inter", sans-serif;
 
+  --bg-primary: #131313;
+  --bg-card: #262626;
 
-  --bg-primary: #131313; 
-  --bg-card: #262626; 
-
-  --text-base: #d1d5db; 
+  --text-base: #d1d5db;
   --text-secondary: #131313;
 
-
-  --brand-primary: #d2f000; 
+  --brand-primary: #d2f000;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -34,6 +37,12 @@ nav.menu-home-navegacao {
   align-items: center;
   justify-content: space-around;
   padding: 1rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 nav.menu-home-navegacao > h2 {
@@ -128,6 +137,7 @@ section.propaganda-inicial > div.btns-propaganda-inicial > a#btn-comece-agora {
   color: var(--text-secondary);
   font-weight: 600;
   text-decoration: none;
+  text-align: center;
   background-color: var(--brand-primary);
   transition: all 0.25s ease-out;
   padding: 0.6rem 0.9rem;
@@ -146,6 +156,7 @@ section.propaganda-inicial
   color: var(--text-base);
   font-weight: 600;
   text-decoration: none;
+  text-align: center;
   background-color: var(--bg-primary);
   transition: all 0.25s ease-out;
   padding: 0.6rem 0.9rem;
@@ -323,57 +334,6 @@ section.carrossel .carrossel-faixa > article.card-lutas {
   right: 2.5rem;
 }
 
-@media (max-width: 700px) {
-  .carrossel-arrow {
-    width: 2.6rem;
-    height: 2.6rem;
-  }
-  .carrossel-arrow.esquerda {
-    left: 0.6rem;
-  }
-  .carrossel-arrow.direita {
-    right: 0.6rem;
-  }
-}
-
-@media (max-width: 900px) {
-  nav.menu-home-navegacao {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  section.propaganda-inicial {
-    height: auto;
-    padding-bottom: 4rem;
-  }
-
-  section.propaganda-inicial > h1 {
-    font-size: 2.4rem;
-  }
-
-  section.propaganda-inicial > div.btns-propaganda-inicial {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  section.carrossel {
-    padding: 4rem 1.2rem 5rem;
-  }
-
-  section.carrossel > div.carrossel-apresentacao > h2 {
-    font-size: 1.65rem;
-  }
-
-  section.carrossel > div.carrossel-faixa > .carrossel-card,
-  section.carrossel > div.carrossel-faixa > .carrossel-slide {
-    flex: 0 0 18rem;
-    width: 18rem;
-    max-width: 18rem;
-    min-height: 24rem;
-  }
-}
-
-
 section.modalidades {
   padding: 4rem 4rem;
 }
@@ -421,7 +381,6 @@ section.modalidades > h2 {
   font-family: var(--font-body);
 }
 
-
 section.horarios {
   padding: 4rem 4rem;
 }
@@ -446,6 +405,7 @@ section.horarios > h2 {
   text-align: center;
   justify-content: center;
   max-width: 20rem;
+  padding: 1rem;
 }
 .horario-card h4 {
   color: #fff;
@@ -462,10 +422,16 @@ section.horarios > h2 {
   max-width: 13rem;
 }
 
-
 section.unidades {
   padding: 4rem 4rem;
 }
+
+section.unidades > h2 {
+  color: var(--brand-primary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 .unidades-hero {
   height: 18rem;
   border-radius: 1rem;
@@ -477,16 +443,25 @@ section.unidades {
 }
 .unidades-cta {
   background: rgba(0, 0, 0, 0.5);
-  padding: 5rem 20rem;
+  padding: 4rem 2rem;
+  max-width: 800px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 0.8rem;
   text-align: center;
 }
 .unidades-cta h3 {
-  color: #fff;
+  color: var(--text-base);
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
+
+.unidades-cta h3 span {
+  color: var(--brand-primary);
+  font-weight: bold;
+}
+
 .unidades-cta input[type="search"] {
   padding: 0.9rem 1rem;
   border-radius: 0.6rem;
@@ -495,7 +470,6 @@ section.unidades {
   min-width: 0;
   max-width: 26rem;
 }
-
 
 section.planos {
   padding: 4rem 4rem;
@@ -516,8 +490,8 @@ section.planos > h2 {
     rgba(255, 255, 255, 0.02),
     rgba(0, 0, 0, 0.28)
   );
-  padding: 5rem 0.1rem;
-  margin: 0 5rem;
+  padding: 3rem 1.5rem;
+  margin: 0;
   border-radius: 1rem;
   text-align: center;
   min-height: 16.5rem;
@@ -549,8 +523,12 @@ section.planos > h2 {
   padding: 0.6rem 1rem;
   border-radius: 0.6rem;
   text-decoration: none;
+  transition: all 0.35s ease;
 }
 
+.plano-card .btn-plano:hover {
+  box-shadow: 0px 0px 20px var(--brand-primary);
+}
 
 .site-footer {
   background: #0e0e0e;
@@ -571,21 +549,9 @@ section.planos > h2 {
   color: var(--text-base);
   margin-right: 1rem;
   text-decoration: none;
+  transition: color 0.45s ease;
 }
 
-@media (max-width: 900px) {
-  .modalidades-grid,
-  .planos-grid {
-    grid-template-columns: 1fr;
-  }
-  .horarios-grid {
-    flex-direction: column;
-  }
-  .site-footer .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .unidades-cta {
-    margin-left: 0;
-  }
+.site-footer .footer-links a:hover {
+  color: var(--brand-primary);
 }
