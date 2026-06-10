@@ -1,23 +1,15 @@
 @charset "UTF-8";
 
-/* =================================================================
-   DESKTOPS MENORES / TABLETS GRANDES (Telas até 1150px)
-   ================================================================= */
 @media (max-width: 1150px) {
-  /* --- PLANOS --- */
   .planos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* --- HORÁRIOS --- */
   .horarios-grid {
     gap: 2rem;
   }
 }
 
-/* =================================================================
-   TABLETS E CELULARES GRANDES (Telas até 900px)
-   ================================================================= */
 @media (max-width: 900px) {
   /* --- NAVEGAÇÃO --- */
   nav.menu-home-navegacao {
@@ -30,7 +22,6 @@
     justify-content: center;
   }
 
-  /* --- HERO (PROPAGANDA INICIAL) --- */
   section.propaganda-inicial {
     height: auto;
     padding-bottom: 4rem;
@@ -45,7 +36,6 @@
     gap: 1rem;
   }
 
-  /* --- CARROSSEL --- */
   section.carrossel {
     padding: 4rem 1.2rem 5rem;
   }
@@ -62,12 +52,10 @@
     min-height: 24rem;
   }
 
-  /* --- MODALIDADES --- */
   .modalidades-grid {
     grid-template-columns: 1fr;
   }
 
-  /* --- HORÁRIOS --- */
   .horarios-grid {
     flex-direction: column;
     align-items: center;
@@ -78,7 +66,6 @@
     max-width: 24rem;
   }
 
-  /* --- UNIDADES --- */
   .unidades-cta {
     margin-left: 0;
     padding: 2.5rem 1rem;
@@ -88,23 +75,17 @@
     font-size: 1.15rem;
   }
 
-  /* --- PLANOS --- */
   .planos-grid {
     grid-template-columns: 1fr;
   }
 
-  /* --- FOOTER --- */
   .site-footer .footer-inner {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
-/* =================================================================
-   CELULARES MENORES (Telas até 700px)
-   ================================================================= */
 @media (max-width: 700px) {
-  /* --- CARROSSEL (SETAS DE NAVEGAÇÃO) --- */
   .carrossel-arrow {
     width: 2.6rem;
     height: 2.6rem;

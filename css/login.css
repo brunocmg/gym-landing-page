@@ -24,9 +24,6 @@ body {
   color: var(--text-base);
 }
 
-/* =========================================
-   MENU DE NAVEGAÇÃO
-   ========================================= */
 nav.menu-home-navegacao {
   display: flex;
   align-items: center;
@@ -78,9 +75,6 @@ nav.menu-home-navegacao > ul > li > a:hover::after {
   width: 100%;
 }
 
-/* =========================================
-   SESSÃO DA PÁGINA DE LOGIN
-   ========================================= */
 .sessao-login {
   display: flex;
   justify-content: center;
@@ -204,9 +198,6 @@ nav.menu-home-navegacao > ul > li > a:hover::after {
   box-shadow: 0px 0px 20px var(--brand-primary);
 }
 
-/* =========================================
-   FOOTER
-   ========================================= */
 .site-footer {
   background: #0e0e0e;
   padding: 2.5rem 4rem;
@@ -236,9 +227,6 @@ nav.menu-home-navegacao > ul > li > a:hover::after {
   color: var(--brand-primary);
 }
 
-/* =========================================
-   POP-UP DE SUCESSO (TOAST)
-   ========================================= */
 #toast-sucesso {
   position: fixed;
   bottom: 2rem;
