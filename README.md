@@ -29,7 +29,7 @@ No frameworks, no build step and no dependencies.
 ## Running locally
 
 ```bash
-git clone https://github.com/brunocmg/power-fit-landing-page.git
+git clone https://github.com/brunocmg/gym-landing-page.git
 ```
 
 Then open `index.html` in your browser.
